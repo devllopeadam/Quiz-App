@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <div class="toggler-theme">
+    <div class="light">
+      <img class="sun" src="./assets/images/icon-sun-dark.svg">
+    </div>
+    <div class="toggle">
+      <span></span>
+    </div>
+    <div class="dark">
+      <img class="moon" src="./assets/images/icon-moon-dark.svg">
+    </div>
+  </div>
+  <div class="all">
+    <div class="container">
+      <div class="start-choses">
+        <div class="info">
+          <h1>Welcome to the <span>Frontend Quiz!</span></h1>
+          <p>Pick a subject to get started.</p>
+        </div>
+        <div class="choses">
+          <div class="chose">
+            <img>
+            <h4 class="concept"></h4>
+          </div>
+          <div class="chose">
+            <img>
+            <h4 class="concept"></h4>
+          </div>
+          <div class="chose">
+            <img>
+            <h4 class="concept"></h4>
+          </div>
+          <div class="chose">
+            <img>
+            <h4 class="concept"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="the-game">
+        <div class="concept-name">
+          <img class="img" src="./assets/images/icon-html.svg">
+          <h4 class="name"></h4>
+        </div>
+        <div class="content">
+          <div class="info-question">
+            <p>Question <span class="current-question-label">1</span> of 10</p>
+            <h1 class="question"></h1>
+            <div class="prog">
+              <span data-width="10%"></span>
+            </div>
+          </div>
+          <div class="options">
+            <div class="option">
+              <div class="num">A</div>
+              <h4 class="text-question"></h4>
+              <img class="incorrect" src="./assets/images/icon-incorrect.svg" alt="">
+              <img class="correct" src="./assets/images/icon-correct.svg" alt="">
+            </div>
+            <div class="option">
+              <div class="num">B</div>
+              <h4 class="text-question"></h4>
+              <img class="incorrect" src="./assets/images/icon-incorrect.svg" alt="">
+              <img class="correct" src="/assets/images/icon-correct.svg" alt="">
+            </div>
+            <div class="option">
+              <div class="num">C</div>
+              <h4 class="text-question"></h4>
+              <img class="incorrect" src="./assets/images/icon-incorrect.svg" alt="">
+              <img class="correct" src="/assets/images/icon-correct.svg" alt="">
+            </div>
+            <div class="option">
+              <div class="num">D</div>
+              <h4 class="text-question"></h4>
+              <img class="incorrect" src="./assets/images/icon-incorrect.svg" alt="">
+              <img class="correct" src="./assets/images/icon-correct.svg" alt="">
+            </div>
+            <button class="submit">Submit</button>
+            <button class="next-question">Next Question</button>
+            <div class="error">
+              <img src="./assets/images/icon-incorrect.svg">
+              <span>Please select an answer</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="final-result">
+        <div class="content">
+          <div class="info">
+            <h1>Quiz completed <span>You scored...</span></h1>
+          </div>
+          <div class="content-flex">
+            <div class="score-data">
+              <div class="title">
+                <img class="img-result">
+                <h2 class="name-result"></h2>
+              </div>
+              <div class="data">
+                <h1 class="score">0</h1>
+                <span>Out Of 10</span>
+              </div>
+            </div>
+            <button class="again">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
