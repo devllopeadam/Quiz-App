@@ -689,6 +689,12 @@ body {
   }
 }
 
+@media (max-width:576px) {
+  .concept-name {
+    margin-top: -96px;
+  }
+}
+
 @keyframes show-animation {
   0% {
     opacity: 0;
